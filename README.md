@@ -11,7 +11,7 @@
 
 ## 一、简单讲讲
 
-PyOnline是一款基于SSMP和Vue开发的Python在线实验平台，系统主要提供公告发布、班级管理、实验编辑、Python代码在线运行、实验评分、实验数据记录、实验结果下载等功能。系统为前后端分离架构，前端基于CodeMirror和Vue开发，使用Element UI辅助设计；后端基于SpringBoot框架，使用MybatisPlus完成持久层设计，内置Python3编译器实现核心功能。
+PyOnline是一款基于SSMP和Vue开发的Python在线实验平台，系统主要提供公告发布、班级管理、实验编辑、Python代码在线运行、实验评分、实验数据记录、实验结果下载等功能。系统为前后端分离架构，前端基于CodeMirror和Vue开发，使用Element UI辅助设计；后端基于SpringBoot框架，使用MybatisPlus完成持久层设计，调用Python3编译器实现核心功能。
 
 ## 二、功能介绍
 
