@@ -1,0 +1,44 @@
+# 端口设置
+server:
+  port: 8080
+
+# 数据库连接信息
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql:///py_online?serverTimezone=UTC&allowMultiQueries=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 400MB
+      # 上传中文件的大小
+      max-request-size: 400MB
+      # 单个文件上传大小
+      file-size-threshold: 400MB
+# 项目静态资源中用户文件夹路径
+myProject:
+  static:
+    # 项目静态资源目录绝对路径
+    staticUrl: F:\workspace\py-online\py_online\src\main\resources\static\
+    # 项目静态资源中用户文件夹路径
+    userFiles: F:\workspace\py-online\py_online\src\main\resources\static\user\
+    # 项目静态资源中用户文件夹路径(斜杠形式-用于CodeCon)
+    userFilesR: F:/workspace\py-online/py_online/src/main/resources/static/user/
+    # 项目新用户注册默认头像路径-相对路径
+    UserAvatarUrl: /img/user/default.png
+
+
+# 表前缀配置
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: po_
+      # id增长方式
+      id-type: auto
+  configuration:
+    # 启动日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
