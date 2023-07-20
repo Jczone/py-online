@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 09/04/2023 21:16:17
+ Date: 20/07/2023 16:03:29
 */
 
 SET NAMES utf8mb4;
@@ -173,7 +173,7 @@ CREATE TABLE `po_report`  (
   INDEX `user_id`(`user_id`) USING BTREE,
   CONSTRAINT `po_report_ibfk_1` FOREIGN KEY (`experiment_id`) REFERENCES `po_experiment` (`experiment_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `po_report_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `po_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE = InnoDB AUTO_INCREMENT = 31 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 39 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of po_report
@@ -231,8 +231,8 @@ CREATE TABLE `po_user`  (
 -- ----------------------------
 -- Records of po_user
 -- ----------------------------
-INSERT INTO `po_user` VALUES ('2000', '赵宣廷', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Python是一门什么语言', 'Python解释器的作用', '脚本语言', '解释并运行代码', '/user/2000/avatar/avatar_2023_04_07221658036.jpg', b'0');
-INSERT INTO `po_user` VALUES ('2001', '赵长宏', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Python中的基本数据类型有', 'Python中缩进有什么用', '整型、浮点型、字符串', '确定代码关系', '/user/2001/avatar/avatar_2023_04_07202410002.jpg', b'1');
+INSERT INTO `po_user` VALUES ('2000', '赵宣廷', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Python是一门什么语言', 'Python解释器的作用', '脚本语言', '解释并运行代码', '/user/2000/avatar/avatar_2023_07_17204901171.png', b'0');
+INSERT INTO `po_user` VALUES ('2001', '赵长宏', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Python中的基本数据类型有', 'Python中缩进有什么用', '整型、浮点型、字符串', '确定代码关系', '/user/2001/avatar/avatar_2023_07_17224455426.jpeg', b'1');
 INSERT INTO `po_user` VALUES ('root', '秦晓晓', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'asd', 'asd', 'asd', 'asd', '/img/user/default.png', b'0');
 
 -- ----------------------------
