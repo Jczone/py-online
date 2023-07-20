@@ -1,0 +1,6 @@
+FROM java:8
+VOLUME /tmp
+EXPOSE 8080
+ADD py_online-0.0.1-SNAPSHOT.jar py_online.jar
+RUN bash -c 'touch /py_online.jar'
+ENTRYPOINT ["java", "-jar", "/py_online.jar"]
