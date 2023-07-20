@@ -11,7 +11,7 @@
 
 ## 一、简单讲讲
 
-PyOnline是一款基于SSMP和Vue开发的Python在线实验平台，系统主要提供Python代码在线运行、实验评分、实验数据记录、实验结果下载、公告发布、班级管理、实验编辑等功能。系统为前后端分离架构，前端基于CodeMirror和Vue开发，使用Element UI辅助设计；后端基于SpringBoot框架，使用MybatisPlus完成持久层设计，调用Python3编译器实现核心功能；项目已写好Dockerfile，可随时部署上线。
+PyOnline是一款基于SSMP和Vue开发的Python在线实验平台，系统主要提供Python代码在线编译运行、实验评分、实验数据记录、实验结果下载、公告发布、班级管理、实验编辑等功能。系统为前后端分离架构，前端基于CodeMirror和Vue开发，使用Element UI辅助设计；后端基于SpringBoot框架，使用MybatisPlus完成持久层设计，调用Python3编译器实现核心功能；项目已写好Dockerfile，可随时部署上线。
 
 ## 二、功能介绍
 
@@ -108,7 +108,7 @@ PyOnline是一款基于SSMP和Vue开发的Python在线实验平台，系统主�
 
 ### 1. 后端项目（py_online)
 
-下载后用idea打开项目，初次加载idea会自动下载依赖，最好先配置镜像源或科学上网，这个过程可能需要1h左右。此时可以在MySQL中创建一个名为two hours的数据库，运行后端文件夹中的two hours.sql文件，即可完成数据库初始化。项目加载完成后，在application.yml中修改项目路径为你当前的项目路径，配置好数据库连接，即可运行后端了。
+下载后用idea打开项目，初次加载idea会自动下载依赖，最好先配置镜像源或科学上网，这个过程可能需要1h左右。此时可以在MySQL中创建一个名为py_online的数据库，运行后端文件夹中的py_online.sql文件，即可完成数据库初始化。项目加载完成后，在application.yml中修改项目路径为你当前的项目路径，配置好数据库连接，即可运行后端了。
 
 ### 2. 前端项目（py_online_front)
 
